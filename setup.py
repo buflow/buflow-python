@@ -1,4 +1,4 @@
-import setuptools
+import setuptools, os
 
 here = os.path.abspath(os.path.dirname(__file__))
 
@@ -11,7 +11,7 @@ with open(
 
 setuptools.setup(
     name="buflow",
-    version="0.0.1",
+    version="1.0.0",
     author="Buflow",
     author_email="support@buflow.com",
     description="Python bindings for the Buflow API",
@@ -30,6 +30,8 @@ setuptools.setup(
         "Programming Language :: Python :: 3.7",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
+        "Programming Language :: Python :: Implementation :: PyPy",
+        "Topic :: Software Development :: Libraries :: Python Modules",
     ],
     python_requires=">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*",
 )
